@@ -41,12 +41,12 @@ header h1 {
 
 header p {
     margin: 0;
-    font-family: "Suez One", serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 30px; 
     position: absolute;
     top: 15em;
     left: 5em;
-    color: rgb(20, 37, 116); 
+    color: rgb(0, 0, 0); 
     z-index: 2;
 
 }
@@ -67,6 +67,7 @@ nav {
     right: 20em; 
     background-color: #011480;
     border-radius: 0px 0px 30px 30px;
+    padding: 10px 20px;
 }
 
 nav ol {
@@ -75,14 +76,21 @@ nav ol {
     margin: 0;
     display: flex;  
 }
+nav li {
+    margin-left: 20px;
+}
 
 nav a {
     color: rgb(255, 255, 255); 
     text-decoration: none;
     font-size:3em; 
     margin: 10px;
+    transition: color 0.3s;
 }
 
+nav a:hover {
+    color: rgb(252, 0, 0);
+}
 
 .image-container {
     display: flex;  
@@ -101,16 +109,87 @@ nav a {
     border-radius: 40px;
     box-shadow: 3px 3px 9px 7px #797878;
 }
-footer {
-    background-color: #007bff; 
-    color: white;
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0px 8px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 400px;
+    height: 500px;
+    max-width: 600px;
+    position: absolute;
+    top: 3700px;
+    left: 300px;
+}
+.form-container h2 {
     text-align: center;
-    padding: 20px 0;
+    margin-bottom: 20px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+.form-row .form-group {
+    flex: 1;
+}
+.form-row .form-group input {
+    width: 100%;
+}
+.form-container button {
+    background-color: #173891;
+    color: white;
+    border: none;
+    padding: 20px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+}
+.form-container button:hover {
+    background-color: #ff0000;
+}
+footer {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 150px 0;
     position: relative;
     bottom: 0;
     width: 100%;
 }
+footer ol{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px; 
+    position: absolute;
+    top: 3em;
+    left: 0px;
+    color: rgb(0, 0, 0); 
+    display: flex;
+    list-style: none;
 
+}
+footer li {
+    margin-left:450px;
+}
 main {
 
     padding: 20px;
@@ -118,7 +197,7 @@ main {
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    min-height: 300vh; 
+    min-height: 500vh; 
 
 }
 
@@ -126,7 +205,7 @@ main img {
     width: 700px;
     border-radius: 40px;
     margin-top: 800px;
-    height: 800px;
+    height: 700px;
 }
 
 main ol{
@@ -134,10 +213,27 @@ main ol{
     gap:350px; 
     position: absolute; 
     top:200vh;  
-    left: 400px;
+    left: 350px;
     list-style-type: none;
  
 }
+hr {
+    border: none;              
+    border-radius: 30px;
+    border-top: 10px solid #b0a1cc; 
+    width: 80%;                
+    margin: 2400px 0;              
+    margin-left: auto;           
+    margin-right: auto;          
+}
+hr.separador {
+    border: none;
+    border-top: 2px solid #333;  
+    width: 80%;                 
+    margin: 30px auto;           
+}
+
+
 /* Responsividade */
 @media (max-width: 768px) {
     header h1 {
