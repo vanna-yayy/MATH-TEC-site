@@ -1,0 +1,155 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+header {
+    background-image: url('fundo.png');
+    background-size: cover;
+    background-position: center;
+    height: 120vh;  
+    color: rgb(0, 0, 0); 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+   
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-family: "Suez One", serif;
+    font-size: 100px;
+    align-self: flex-start; 
+    position: absolute;
+    top: 3em; 
+    left: 1em;
+    color: rgb(20, 37, 116); 
+    z-index: 2;
+
+}
+
+header p {
+    margin: 0;
+    font-family: "Suez One", serif;
+    font-size: 30px; 
+    position: absolute;
+    top: 15em;
+    left: 5em;
+    color: rgb(20, 37, 116); 
+    z-index: 2;
+
+}
+
+header .header-image {
+    position: absolute;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 750px; 
+    height: 600px;  
+    border-radius: 0px 0px 30px 0px;
+}
+
+nav {
+    position: absolute;
+    top:0px;  
+    right: 20em; 
+    background-color: #011480;
+    border-radius: 0px 0px 30px 30px;
+}
+
+nav ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;  
+}
+
+nav a {
+    color: rgb(255, 255, 255); 
+    text-decoration: none;
+    font-size:3em; 
+    margin: 10px;
+}
+
+
+.image-container {
+    display: flex;  
+    justify-content: center; 
+    gap:350px;  
+    position: absolute; 
+    top: 90vh;  
+    left: 50%; 
+    transform: translateX(-50%);  
+    z-index: 10; 
+}
+
+.image-item {
+    width: 500px;  
+    height: 700px;
+    border-radius: 40px;
+    box-shadow: 3px 3px 9px 7px #797878;
+}
+footer {
+    background-color: #007bff; 
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+main {
+
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    min-height: 300vh; 
+
+}
+
+main img {
+    width: 700px;
+    border-radius: 40px;
+    margin-top: 800px;
+    height: 800px;
+}
+
+main ol{
+    display: flex;
+    gap:350px; 
+    position: absolute; 
+    top:200vh;  
+    left: 400px;
+    list-style-type: none;
+ 
+}
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem; 
+    }
+
+    nav a {
+        font-size: 1rem; 
+    }
+
+    main {
+        height: auto; 
+    }
+}
+
