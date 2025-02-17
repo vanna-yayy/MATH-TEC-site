@@ -1,91 +1,55 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MATH-TEC</title>
+    <title>Math-Tec</title>
     <link rel="stylesheet" href="principal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
-
 </head>
 <body>
     <header>
-      
-        <h1>MATH-TEC</h1>
-        <p>Coisas legais da matemática</p>
-        <img src="logo.png" alt="Imagem Logo" class="header-image">
+        <section>
+            <img src="midia/matemático.png" alt="Matemático">
+            <h1>Math-Tec</h1>
+            <h2>Coisas legais na matemática</h2>
+        </section>
         <nav>
-            <ol>
-                <li><a href="algo.html">início</a></li>
-                <li><a href="algo.html">algo</a></li>
-                <li><a href="algo.html">algo</a></li>
-                <li><a href="algo.html">algo</a></li>
-                <li><a href="algo.html">algo</a></li>
-            </ol>
+            <ul>
+                <li>
+                    <a href="" style="background-color: red;">Início</a>
+                </li>
+                <li>
+                    <a href="">Séries</a>
+                </li>
+                <li>
+                    <a href="">Fractais</a>
+                </li>
+                <li>
+                    <a href="">WFC</a>
+                </li>
+                <li>
+                    <a href="">Boids</a>
+                </li>
+            </ul>
         </nav>
+        <!-- <img src="calculos.png" alt="Cálculos"> -->
     </header>
-
-    <div class="image-container">
-        <img src="k.png" alt="" class="image-item">
-        <img src="k.png" alt="" class="image-item">
-        <img src="k.png" alt="" class="image-item">
-    </div>
     <main>
-           
-        <ol>
-            <li> <img src="g.png" alt=""></li>
-            <li><img src="a.png" alt=""></li>
-        </ol>
-        
-         <hr> 
-
-         <div class="form-container">
-            <h2>Entrar</h2>
-            <form action="#" method="post">
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="nome">Nome*</label>
-                        <input type="text" id="nome" name="nome" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="sobrenome">Sobrenome*</label>
-                        <input type="text" id="sobrenome" name="sobrenome" required>
-                    </div>
-                </div>
-                
-                <div class="form-group">
-                    <label for="email">Email*</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-        
-                <div class="form-group">
-                    <label for="mensagem">Mensagem*</label>
-                    <textarea id="mensagem" name="mensagem" required></textarea>
-                </div>
-        
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
+        <section id="fractal-display">
+            <img src="midia/mandelbrot.png" alt="Conjunto de Mandelbrot">
+            <img src="midia/sierpinski.png" alt="Triângulo de Sierpinski">
+            <img src="midia/dragao.png" alt="Fractal do dragão">
+        </section>
+        <section id="math-exposition">
+            <canvas id="nodes" height="1000px"></canvas>
+        </section>
     </main>
-    <hr class="separador">
     <footer>
-        <ol>
-            <li>
-                <p>Contato</p>
-            </li>
-            <li>
-                <p>Contato</p>
-            </li>
-            <li>
-                <p>Contato</p>
-            </li>
-            <li>
-                <p>Contato</p>
-            </li>
-            <li>
-                <p>Contato</p>
-            </li>
-        </ol>
-      </footer>
+
+    </footer>
+    <script src="principal.js"></script>
 </body>
 </html>
