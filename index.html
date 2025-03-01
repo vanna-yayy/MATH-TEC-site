@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,34 +8,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body style="background-image: url('midia/calculos.png');">
     <header>
         <section>
-            <img src="midia/matemático.png" alt="Matemático">
+            <img src="midia/logo.png" alt="Matemático">
             <h1>Math-Tec</h1>
             <h2>Coisas legais na matemática</h2>
         </section>
         <nav>
             <ul>
                 <li>
-                    <a href="" style="background-color: red;">Início</a>
+                    <a href="index.html" style="background-color: red;">Início</a>
                 </li>
                 <li>
-                    <a href="">Séries</a>
+                    <a href="series.html">Séries</a>
                 </li>
                 <li>
-                    <a href="">Fractais</a>
+                    <a href="fractals.html">Fractais</a>
                 </li>
                 <li>
-                    <a href="">WFC</a>
+                    <a href="wfc.html">WFC</a>
                 </li>
                 <li>
-                    <a href="">Boids</a>
+                    <a href="boids.html">Boids</a>
                 </li>
             </ul>
         </nav>
-        <!-- <img src="calculos.png" alt="Cálculos"> -->
     </header>
     <main>
         <section id="fractal-display">
@@ -43,12 +45,87 @@
             <img src="midia/sierpinski.png" alt="Triângulo de Sierpinski">
             <img src="midia/dragao.png" alt="Fractal do dragão">
         </section>
+
+        <hr class="page-hr">
+        
         <section id="math-exposition">
-            <canvas id="nodes" height="1000px"></canvas>
+            <canvas id="nodes" height="2030px"></canvas>
+        </section>
+
+        <hr class="page-hr">
+
+        <section id="mathematicians">
+            <figure>
+                <img src="midia/fourier.png" alt="Fourier" width="400">
+                <br>
+                <figcation>A FFT, algoritmo um dos algoritmos mais importantes na computação e processamento de sinais foi baseada nas ideias do matemático Joseph Fourier, quando este pensava sobre somatórios de sinusoides infinitos.</figcation>
+            </figure>
+            <figure>
+                <img src="midia/euler.png" alt="Euler" width="400">
+                <br>
+                <figcation>A relação entre o cálculo diferencial de Leibniz e o método das fluxões de Newton e a resolução de equações diferenciais com a utilização do fator integrante. Euler foi o primeiro a tratar seno e cosseno como funções.</figcation>
+            </figure>
+        </section>
+
+        <hr class="page-hr">
+
+        <section>
+            <h2>
+                <fieldset>
+                    <legend>Entrar</legend>
+                    <form class="form-container">
+                        <div class="row">
+                            <div class="column half-width">
+                                <label for="name">Nome*</label>
+                                <input type="text" id="name" name="name">
+                            </div>
+                            <div class="column half-width">
+                                <label for="last-name">Sobrenome*</label>
+                                <input type="text" id="last-name" name="last-name">
+                            </div>
+                        </div>
+                        <div class="column">
+                            <label for="email">E-mail*</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="column">
+                            <label for="number">Número*</label>
+                            <input type="number" id="number" name="number">
+                        </div>
+                        <div class="column">
+                            <input type="submit" id="submit">
+                        </div>
+                    </form>
+                </fieldset>
+            </h2>
         </section>
     </main>
     <footer>
-
+        <hr>
+        <table>
+            <thead>
+                <tr>
+                    <th>Contato</th>
+                    <th>Eventos</th>
+                    <th>Conteudo</th>
+                    <th>Fontes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>+55 (84) 99999-9999</td>
+                    <td>Esse mês</td>
+                    <td>Aulas</td>
+                    <td>Livros</td>
+                </tr>
+                <tr>
+                    <td>expomath@expo.com</td>
+                    <td>Todos</td>
+                    <td>Artigos</td>
+                    <td>Sites</td>
+                </tr>
+            </tbody>
+        </table>
     </footer>
     <script src="principal.js"></script>
 </body>

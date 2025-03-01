@@ -4,8 +4,7 @@
 }
 body {
     background-color: #E7E7E7;
-    background-image: url("midia/calculos.png");
-    background-size:contain;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 header {
@@ -60,4 +59,90 @@ a:hover {
 #fractal-display img {
     padding: 3em;
     filter: drop-shadow(-20px 20px rgba(0, 0, 0, 0.4));
+}
+footer {
+    border-top: 20px solid #1B367A;
+}
+footer hr {
+    margin: 20px;
+}
+#mathematicians {
+    display: flex;
+    justify-content: center;
+}
+#mathematicians figure {
+    text-align: center;
+    width: 450px;
+    margin: 50px;
+}
+#mathematicians figure img {
+    padding: 25px;
+    background-color: #E0B25C;
+}
+#mathematicians figure figcaption {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.page-hr {
+    border-top: 5px solid #1B367A;
+}
+footer table {
+    margin: 50px auto;
+}
+th, td {
+    padding: 10px 70px;
+    text-align: center;
+    font-family: "Roboto";
+}
+th {
+    font-size: x-large;
+}
+fieldset {
+    width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 10px;
+    width: 100%;
+    max-width: 400px;
+    font-family: "Roboto", sans-serif;
+    font-size: medium;
+}
+legend {
+    font-family: "Roboto", sans-serif;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.half-width {
+    width: 50%;
+}
+input {
+    background-color: rgb(211, 211, 211);
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+}
+input[type="submit"] {
+    background-color: #1B367A;
+    color: white;
+    margin: 20px 0;
+    font-size: larger;
+}
+input[type="submit"]:hover {
+    background-color: red;
+    cursor: pointer;
 }
