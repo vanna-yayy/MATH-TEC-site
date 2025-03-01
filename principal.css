@@ -149,3 +149,19 @@ input[type="submit"]:hover {
 .flex {
     display: flex;
 }
+.first-section {
+    background-color: #E7E7E7;
+    padding: 40px 0;
+}
+#boids-intro article {
+    justify-content: center;
+    display: flex;
+    margin: 60px 100px 100px;
+}
+#boids-intro article p {
+    margin-right: 100px;
+    font-size: x-large;
+}
+#boids-intro canvas {
+    margin: 0 100px;
+}
