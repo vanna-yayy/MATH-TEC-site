@@ -42,17 +42,69 @@
     <main>
         <hr class="page-hr">
         
-        <section class="first-section" id="boids-intro">
+        <section class="first-section content-section">
             <article>
                 <p>O algoritmo de boids é um conjunto de tres regras que, em conjunto, geram comportamentos muito semelhantes ao de diversos animais da natureza, por exemplo grupos de aves que andam conglomeradas e sincronizadas, ou cardumes de peixes.
 
                     Boids é um programa de vida artificial, desenvolvido por Craig Reynolds em 1986, que simula o comportamento de bandos de pássaros e movimentos de grupo relacionados.</p>
                 <img src="midia/peixes.png" alt="Peixes">
+                <video autoplay loop>
+                    <source src="midia/boids-simulation.mp4" type="video/mp4">
+                </video>
             </article>
-            <canvas id="full-canva"></canvas>
+        </section>
+        
+        <hr class="page-hr">
+
+        <section class= "content-section">
+            <article>
+                <p>Coesão é o processo onde cada instância (representando um 
+                    pássaro, peixe, ou qualquer outra coisa) segue a tendência de
+                    onde há mais instâncias, usando o baricentro destas como 
+                    ponto focal.
+                    Esse processo garante que o sistema possua grupos coerentes
+                    de objetos sem que haja desformação desses grupos.</p>
+                <img src="midia/cohesion.png" alt="Peixes">
+            </article>
         </section>
 
         <hr class="page-hr">
+
+        <section class= "content-section">
+            <article>
+                <img src="midia/cohesion.png" alt="Peixes">
+                <p>Alinhamento é a propriedade que força instâncias individuais a
+                    se alinharem na direção média do grupo em que estão, assim
+                    garantindo que o bando esteja indo em uma mesma direção,
+                    e não simplesmente seguindo um local aleatório.
+                    Pode se implementar também uma tendência geral deles a
+                    seguir uma direção específica e chamá-la de norte, pois muitos
+                    grupos de aves se guiam em direção ao norte.</p>
+            </article>
+        </section>
+
+        <hr class="page-hr">
+
+        <section class= "content-section">
+            <article>
+                <p>Por fim, separação é a ultima parte do algoritmo que visa 
+                    distanciar instâncias uma das outras em seu espaço pessoal.
+                    O interessante dessa última regra é que ela age contrária à
+                    primeira, porém em um alcance menor. Sendo assim, essas duas
+                    regras cooperam entre si para que a instância tenha um espaço
+                    pessoal ao mesmo tempo que não se isola do bando.</p>
+                <img src="midia/separation.png" alt="Peixes">
+            </article>
+        </section>
+
+        <hr class="page-hr">
+
+        <section class= "content-section">
+            <article>
+                <p>No fim todas as regras formam o algoritmo de boids, que simula muito realisticamente fenômenos da natureza que animais repetem em seus mecanismos de sobrevivência social.</p>
+            </article>
+        </section>
+
     </main>
     <footer>
         <hr>
@@ -81,6 +133,5 @@
             </tbody>
         </table>
     </footer>
-    <script src="boids.js"></script>
 </body>
 </html>

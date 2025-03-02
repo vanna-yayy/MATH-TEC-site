@@ -151,17 +151,22 @@ input[type="submit"]:hover {
 }
 .first-section {
     background-color: #E7E7E7;
-    padding: 40px 0;
 }
-#boids-intro article {
+.content-section article {
     justify-content: center;
     display: flex;
-    margin: 60px 100px 100px;
+    flex-wrap: wrap;
+    margin: 0 100px 0;
+    padding: 50px;
 }
-#boids-intro article p {
-    margin-right: 100px;
+.content-section article p {
     font-size: x-large;
+    width: 40%;
+    margin: 20px;
 }
-#boids-intro canvas {
-    margin: 0 100px;
+.content-section video {
+    margin-top: 40px;
+    width: 1000px;
+    height: 400px;
+    object-fit: cover;
 }

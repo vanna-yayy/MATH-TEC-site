@@ -40,6 +40,34 @@
         </nav>
     </header>
     <main>
+        <hr class="page-hr">
+        
+        <section class="first-section content-section">
+            <article>
+                <p>Uma série matemática é um monte de números sendo somados, em que o todo representa mais do que a soma das suas partes.
+                    A série em específico dessa página é a série de fourier expandida para números complexos. O nome soa complexo, mas a ideia é simples.
+                </p>
+                <img src="midia/fourier.png" alt="Peixes">
+            </article>
+        </section>
+
+        <hr class="page-hr">
+        
+        <section class="content-section">
+            <article>
+                <p>A parte em específico dessa série é um círculo girando constantemente, como este sendo representado a direita. Iremos evitar termos técnicos como revoluções por segundo, apenas saiba que esse círculo gira na mesma velocidade.</p>
+                <canvas id="basic-circle" width="300" height="300"></canvas>
+            </article>
+        </section>
+
+        <hr class="page-hr">
+        
+        <section class="content-section">
+            <article>
+                <p>Agora, somaremos dois círculos para mostrar como seria o trajeto marcado por dois círculos em velocidades e tamanhos diferentes.</p>
+                <canvas id="composite-circle" width="300" height="300"></canvas>
+            </article>
+        </section>
     </main>
     <footer>
         <hr>
@@ -68,5 +96,6 @@
             </tbody>
         </table>
     </footer>
+    <script src="series.js"></script>
 </body>
 </html>
